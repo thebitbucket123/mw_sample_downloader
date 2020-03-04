@@ -1,5 +1,5 @@
 # mw_sample_downloader
-Simple python script to search for samples by hash on various malware repos and download a copy locally for analysis
+Simple python script to search for samples by hash on various malware repos and download a copy locally for analysis. Must give the script a path to a text file (for -f flag) with one hash per line of any combo of MD5, SHA1, or SHA256 hashes.
 
 Currently supports the following repos:
   - VirusSign
@@ -9,6 +9,7 @@ Currently supports the following repos:
 WIP integrations:
   - Viper Malware Archive
 
+```
 USAGE:
 malware_dl.py [-h] -f FILE [-o OUT] [-v] [-d]
 
@@ -19,7 +20,7 @@ optional arguments:
                         present, default is ./downloads/
   -v, --verbose
   -d, --debug
-
+```
 
 Configuration:
   - Priority values: Each configured and enabled repo will need to have a priority value assigned to it. This value determines the order each repo is queried against. 
